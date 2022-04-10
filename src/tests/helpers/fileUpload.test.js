@@ -23,7 +23,7 @@ describe('pruebas en file upload', () => {
         const segments = url.split('/');
         const imageId = segments[segments.length - 1].replace('.jpg','');
         await cloudinary.v2.api.delete_resources(imageId,{},(error,result)=>{
-            console.log(error,result);
+            //console.log(error,result);
             //done();
         });
     })

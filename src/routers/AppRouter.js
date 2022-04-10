@@ -9,8 +9,8 @@ import { useDispatch } from "react-redux";
 import { login } from "../actions/auth";
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
-import { loadNotes } from "../helpers/loadNotes";
-import { setNotes, startLoadingNotes } from "../actions/notes";
+import { startLoadingNotes } from "../actions/notes";
+
 
 export const AppRouter = () => {
   const dispatch = useDispatch();
